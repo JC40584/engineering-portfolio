@@ -11,7 +11,8 @@ body {
 
 #wrapper {
     background-color: #ffffff;
-    width: 85%;
+    width: 80%;
+    min-width: 960px;
     max-width: 1200px;
     margin: auto;
     box-shadow: 3px 3px 3px #94a3b8;
@@ -87,18 +88,17 @@ main {
 }
 
 
-/* Home Intro */
+/* Home */
 
 #intro {
     display: flex;
-    align-items: center;
-    gap: 25px;
-    padding: 30px 0;
+    padding: 20px 0;
+    gap: 20px;
 }
 
 #intro section {
     width: 50%;
-    padding: 20px;
+    padding: 30px;
 }
 
 #intro h2 {
@@ -155,7 +155,7 @@ main {
 }
 
 .projectimage {
-    height: 180px;
+    height: 170px;
     overflow: hidden;
 }
 
@@ -192,12 +192,11 @@ main {
 }
 
 
-/* Project Details */
+/* Projects Page */
 
 .projectdetail {
     background-color: #e8e9ea;
     display: flex;
-    align-items: center;
     gap: 30px;
     padding: 20px;
     margin-bottom: 25px;
@@ -218,130 +217,7 @@ main {
 }
 
 
-/* Skills */
-
-.skillsrow {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.skillbox {
-    background-color: #e8e9ea;
-    width: 33.33%;
-    padding: 25px;
-}
-
-.skillbox h3 {
-    color: #1e3a5f;
-}
-
-
-/* Works In Progress */
-
-.progressgrid {
-    display: flex;
-    justify-content: center;
-}
-
-.progressbox {
-    background-color: #e8e9ea;
-    width: 70%;
-    padding: 30px;
-}
-
-.progressbox h3 {
-    color: #1e3a5f;
-    font-size: 1.5em;
-}
-
-
-/* Footer */
-
-footer {
-    background-color: #1e3a5f;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    font-size: 0.8em;
-}
-
-footer section {
-    width: 30%;
-}
-
-footer a {
-    color: #ffffff;
-    display: block;
-    text-decoration: none;
-    padding: 2px;
-}
-
-
-/* Responsive */
-
-@media (max-width: 900px) {
-
-    #wrapper {
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    #intro {
-        flex-direction: column;
-    }
-
-    #intro section,
-    #hero {
-        width: 100%;
-    }
-
-    #hero {
-        height: 260px;
-    }
-
-    .projectrow {
-        flex-direction: column;
-    }
-
-    .project {
-        width: 100%;
-    }
-
-    .projectdetail {
-        flex-direction: column;
-    }
-
-    .projectdetail img,
-    .projectdetail div {
-        width: 100%;
-    }
-
-    .skillsrow {
-        flex-direction: column;
-    }
-
-    .skillbox {
-        width: 100%;
-    }
-
-    .progressbox {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    footer section {
-        width: 100%;
-        margin-bottom: 15px;
-
-    /* Video */
+/* Video */
 
 .videosection {
     background-color: #e8e9ea;
@@ -358,6 +234,25 @@ footer a {
     width: 80%;
     max-width: 800px;
     margin-top: 15px;
+}
+
+
+/* Skills Page */
+
+.skillsrow {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.skillbox {
+    background-color: #e8e9ea;
+    width: 33.33%;
+    padding: 25px;
+}
+
+.skillbox h3 {
+    color: #1e3a5f;
 }
 
 
@@ -397,7 +292,37 @@ th {
 }
 
 
-/* Contact Form */
+/* Works In Progress Page */
+
+.progressgrid {
+    display: flex;
+    justify-content: center;
+}
+
+.progressbox {
+    background-color: #e8e9ea;
+    width: 70%;
+    padding: 30px;
+}
+
+.progressbox h3 {
+    color: #1e3a5f;
+    font-size: 1.5em;
+}
+
+
+/* Contact Page */
+
+.contactbox {
+    background-color: #e8e9ea;
+    max-width: 700px;
+    margin: 20px auto 60px auto;
+    padding: 30px;
+}
+
+.contactbox h3 {
+    color: #1e3a5f;
+}
 
 .contactbox form {
     display: flex;
@@ -429,5 +354,92 @@ th {
 .contactbox input[type="submit"]:hover {
     background-color: #1e3a5f;
 }
+
+
+/* Footer */
+
+footer {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 0.8em;
+}
+
+footer section {
+    width: 30%;
+}
+
+footer a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding: 2px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+
+    #wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    #intro {
+        flex-direction: column;
+    }
+
+    #intro section,
+    #hero {
+        width: 100%;
+    }
+
+    .projectrow {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .projectdetail {
+        flex-direction: column;
+    }
+
+    .projectdetail img,
+    .projectdetail div {
+        width: 100%;
+    }
+
+    .skillsrow {
+        flex-direction: column;
+    }
+
+    .skillbox {
+        width: 100%;
+    }
+
+    .progressbox {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer section {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
