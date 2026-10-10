@@ -2,225 +2,142 @@
 <html lang="en">
 
 <head>
-
     <title>Contact | Jackson Chen Engineering Portfolio</title>
-
     <meta charset="utf-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
           content="Contact Jackson Chen about engineering projects and portfolio work.">
 
     <meta name="keywords"
           content="Jackson Chen, engineering, portfolio, ASU, contact">
-		  
-	<meta name="description"
-      content="Jackson Chen engineering portfolio featuring projects, skills, and work throughout college.">
-
-	<meta name="keywords"
-      content="Jackson Chen, engineering portfolio, ASU, engineering projects">
 
     <link href="style.css" rel="stylesheet">
-
 </head>
-
 
 <body>
 
 <div id="wrapper">
 
-
 <header>
-
     <div id="logo">JC</div>
 
     <div>
-
         <h1>Jackson Chen</h1>
-
         <h2>Engineering Portfolio</h2>
-
     </div>
-
 </header>
 
-
 <nav>
-
     <ul>
-
         <li><a href="index.html">Home/About</a></li>
-
         <li><a href="projects.html">Projects</a></li>
-
         <li><a href="progress.html">Works In Progress</a></li>
-
         <li><a href="skills.html">Skills</a></li>
-
         <li><a href="contact.html">Contact</a></li>
-
     </ul>
-
 </nav>
-
 
 <main>
 
+    <div class="pageheading">
+        <h2>Contact</h2>
 
-<div class="pageheading">
-
-    <h2>Contact</h2>
-
-    <p>
-        If you want to ask about one of my projects or connect
-        about engineering, you can contact me here.
-    </p>
-
-</div>
+        <p>
+            If you want to ask about one of my projects or connect
+            about engineering, you can contact me here.
+        </p>
+    </div>
 
 
-<section class="contactbox">
+    <section class="contactbox">
 
-    <h3>Send a Message</h3>
+        <h3>Send a Message</h3>
 
+        <form action="#" method="post">
 
-    <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
 
+            <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
 
-        <label for="name">Name</label>
+            <label for="subject">Subject</label>
+            <input type="text"
+                   id="subject"
+                   name="subject"
+                   required>
 
-        <input type="text"
-               id="name"
-               name="name"
-               required>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
 
+                <option value="project">Project Question</option>
+                <option value="school">School / Engineering</option>
+                <option value="other">Other</option>
 
-        <label for="email">Email</label>
+            </select>
 
-        <input type="email"
-               id="email"
-               name="email"
-               required>
+            <label for="message">Message</label>
+            <textarea id="message"
+                      name="message"
+                      rows="6"
+                      required></textarea>
 
+            <input type="submit"
+                   value="Send Message">
 
-        <label for="subject">Subject</label>
-
-        <input type="text"
-               id="subject"
-               name="subject"
-               required>
-
-
-        <label for="topic">Topic</label>
-
-        <select id="topic" name="topic">
-
-            <option value="project">
-                Project Question
-            </option>
-
-            <option value="school">
-                School / Engineering
-            </option>
-
-            <option value="other">
-                Other
-            </option>
-
-        </select>
+        </form>
 
 
-        <label for="message">Message</label>
-
-        <textarea id="message"
-                  name="message"
-                  rows="6"
-                  required>
-        </textarea>
-
-
-        <input type="submit"
-               value="Send Message">
+        <p>
+            Email:
+            <a href="mailto:jchen641@asu.edu">
+                jchen641@asu.edu
+            </a>
+        </p>
 
 
-    </form>
+        <p>
+            <a href="https://www.asu.edu/"
+               target="_blank">
+                Arizona State University
+            </a>
+        </p>
 
-
-    <p>
-
-        Email:
-
-        <a href="mailto:jchen641@asu.edu">
-            jchen641@asu.edu
-        </a>
-
-    </p>
-
-
-    <p>
-
-        <a href="https://www.asu.edu/"
-           target="_blank">
-
-            Arizona State University
-
-        </a>
-
-    </p>
-
-
-</section>
-
+    </section>
 
 </main>
 
 
 <footer>
 
+    <section>
+        <h3>Jackson Chen</h3>
+        <p>Engineering Student at ASU</p>
+        <p>&copy; 2026 Jackson Chen</p>
+    </section>
 
-<section>
+    <section>
+        <h3>Links</h3>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="progress.html">Works In Progress</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </section>
 
-    <h3>Jackson Chen</h3>
-
-    <p>Engineering Student at ASU</p>
-
-    <p>&copy; 2026 Jackson Chen</p>
-
-</section>
-
-
-<section>
-
-    <h3>Links</h3>
-
-    <a href="index.html">Home</a>
-
-    <a href="projects.html">Projects</a>
-
-    <a href="progress.html">Works In Progress</a>
-
-    <a href="skills.html">Skills</a>
-
-    <a href="contact.html">Contact</a>
-
-</section>
-
-
-<section>
-
-    <h3>Connect</h3>
-
-    <a href="mailto:jchen641@asu.edu">
-        Email Me
-    </a>
-
-</section>
-
+    <section>
+        <h3>Connect</h3>
+        <a href="mailto:jchen641@asu.edu">Email Me</a>
+    </section>
 
 </footer>
-
 
 </div>
 
