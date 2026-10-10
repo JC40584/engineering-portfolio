@@ -340,5 +340,94 @@ footer a {
     footer section {
         width: 100%;
         margin-bottom: 15px;
+
+    /* Video */
+
+.videosection {
+    background-color: #e8e9ea;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.videosection h2 {
+    color: #1e3a5f;
+}
+
+.videosection video {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 15px;
+}
+
+
+/* Skills Table */
+
+.skilltablebox {
+    background-color: #e8e9ea;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.skilltablebox h2 {
+    color: #1e3a5f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px solid #94a3b8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: #ffffff;
+}
+
+
+/* Contact Form */
+
+.contactbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactbox label {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contactbox input,
+.contactbox select,
+.contactbox textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.contactbox input[type="submit"] {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contactbox input[type="submit"]:hover {
+    background-color: #1e3a5f;
+}
     }
 }
